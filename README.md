@@ -1,2 +1,2 @@
-#Hearth Stone 게임 Modeling 
+# Hearth Stone Game Modeling 
 ![HearthStoneModeling](./images/HearthStoneModeling.jpg)
