@@ -1,15 +1,25 @@
-package game.card.combatable;
+package game.cards.combatable;
 
-import game.card.Card;
-import game.card.StatesOfCard;
-import game.card.combatable.heros.HeroCard;
+import game.cards.Card;
+import game.cards.GradesOfCard;
+import game.cards.JobsOfCard;
+import game.cards.combatable.heros.HeroCard;
 
-public abstract class CombatableCard extends Card {
+public class CombatableCard extends Card {
 
 	private int damage;
 	private int life;
 	private StatesOfCard deadOrLive;
-	private int armor = 0;
+	private int armor;
+	
+	public CombatableCard (String name, int costOfMana, GradesOfCard gradeOfCard,
+			JobsOfCard jobOfCard, int damage, int life) {
+		super(name, costOfMana, gradeOfCard, jobOfCard);
+		this.deadOrLive = StatesOfCard.LIVE;
+		this.armor = 0;
+		this.damage = damage;
+		this.life = life;
+	}
 	
 	public void isAttacked(int damage) {
 		if(armor > 0) {
@@ -38,20 +48,14 @@ public abstract class CombatableCard extends Card {
 	public StatesOfCard isDeadOrLive() {
 		return deadOrLive;
 	}
-	public void setDeadOrLive(StatesOfCard deadOrLive) {
+	private void setDeadOrLive(StatesOfCard deadOrLive) {
 		this.deadOrLive = deadOrLive;
 	}
 	public int getLife() {
 		return this.life;
 	}
-	public void setLife(int life) {
-		this.life = life;
-	}
 	public void heal(int heal) {
 		this.life += heal;
-	}
-	public void setDamage(int damage) {
-		this.damage = damage;
 	}
 	public int getDamage() {
 		return this.damage;
