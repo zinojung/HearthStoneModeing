@@ -1,4 +1,4 @@
-package game.card.heros;
+package game.card.combatable.heros;
 
 import game.card.Card;
 import game.card.GradesOfCard;

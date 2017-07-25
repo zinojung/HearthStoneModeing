@@ -1,4 +1,4 @@
-package game.card.minions;
+package game.card.combatable.minions;
 
 import game.card.Card;
 import game.card.GradesOfCard;

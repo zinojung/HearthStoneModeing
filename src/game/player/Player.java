@@ -5,9 +5,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import game.card.BeAbleToPutASpell;
 import game.card.Card;
-import game.card.CombatableCard;
-import game.card.heros.HeroCard;
-import game.card.minions.MinionCard;
+import game.card.combatable.CombatableCard;
+import game.card.combatable.heros.HeroCard;
+import game.card.combatable.minions.MinionCard;
 import game.card.spells.SpellCard;
 import game.card.weapons.WeaponCard;
 

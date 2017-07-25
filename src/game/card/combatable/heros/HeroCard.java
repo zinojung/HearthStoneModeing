@@ -1,8 +1,7 @@
-package game.card.heros;
+package game.card.combatable.heros;
 
 import game.card.BeAbleToPutASpell;
-import game.card.CombatableCard;
-import game.card.StatesOfCard;
+import game.card.combatable.CombatableCard;
 import game.card.weapons.WeaponCard;
 
 public abstract class HeroCard extends CombatableCard implements BeAbleToPutASpell{

@@ -1,4 +1,4 @@
-package game.card.minions;
+package game.card.combatable.minions;
 
 import game.card.BeAbleToPutASpell;
 import game.card.Card;

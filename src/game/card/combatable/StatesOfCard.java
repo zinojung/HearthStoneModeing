@@ -1,4 +1,4 @@
-package game.card;
+package game.card.combatable;
 
 public enum StatesOfCard {
 	LIVE(true), DEAD(false);

@@ -1,6 +1,8 @@
-package game.card;
+package game.card.combatable;
 
-import game.card.heros.HeroCard;
+import game.card.Card;
+import game.card.StatesOfCard;
+import game.card.combatable.heros.HeroCard;
 
 public abstract class CombatableCard extends Card {
 
